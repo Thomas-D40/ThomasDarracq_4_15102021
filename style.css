@@ -835,6 +835,7 @@ h4 {
     background-image: url(img/image-de-presentation.jpg);
 }
 
+
 @media (max-width:1024px) {
     .bloc {
         padding-right: 20px;
@@ -860,13 +861,13 @@ h4 {
     }
 }
 
-@media only screen and (min-device-width:768px) and (max-device-width:1024px) and (orientation:landscape) {
+@media only screen and (min-width:768px) and (max-width:1024px) and (orientation:landscape) {
     .b-parallax {
         background-attachment: scroll;
     }
 }
 
-@media only screen and (min-device-width:1024px) and (max-device-width:1366px) and (-webkit-min-device-pixel-ratio:1.5) {
+@media only screen and (min-width:1024px) and (max-width:1366px) and (-webkit-min-device-pixel-ratio:1.5) {
     .b-parallax {
         background-attachment: scroll;
     }
@@ -887,10 +888,6 @@ h4 {
         overflow-x: hidden;
     }
 
-    .bloc {
-        padding-right: constant(safe-area-inset-right);
-        padding-left: constant(safe-area-inset-left);
-    }
 
     .bloc-group,
     .bloc-group .bloc {
@@ -901,8 +898,6 @@ h4 {
     .bloc-fill-screen .fill-bloc-bottom-edge,
     .bloc-fill-screen .fill-bloc-top-edge {
         padding: 0 20px;
-        padding-right: constant(safe-area-inset-right);
-        padding-left: constant(safe-area-inset-left);
     }
 }
 
@@ -916,13 +911,19 @@ h4 {
     h1,
     h2,
     h3,
-    h4,
     h5,
     h6,
     p {
         padding-right: 10px!important;
         padding-left: 10px!important;
     }
+
+    h4
+    {
+        padding-right: 10px!important;
+        padding-left: 25px!important;
+    }
+
 
     .b-parallax {
         background-attachment: scroll;
